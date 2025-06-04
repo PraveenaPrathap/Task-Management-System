@@ -1,0 +1,126 @@
+@import '~normalize.css';
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+body{
+  /* display: flex;
+  justify-content: center; */
+  background-color: #959db0;
+}
+
+/* css for task item button save and update  */
+/* 
+.btn {
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+} */
+
+.App{
+ text-align: center;
+ color: #172c41;
+
+}
+
+
+.task-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.btn-edit,
+.btn-delete,
+.btn-save {
+  padding: 9px 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-edit {
+  background-color: #172c41;
+  color: white;
+
+}
+
+.btn-delete {
+  background-color: #b32727;
+  color: white;
+}
+
+.btn-save {
+  background-color: #172c41;
+  color: white;
+}
+
+
+
+
+
+/* Container to push the form to the left side */
+.form-container {
+  padding: 10px;   /* space between the whole form*/
+  /* margin-left: -24px; */
+  display: flex;
+  justify-content: center;
+}
+
+
+/* for Form styling */
+.task-form {
+  display: flex;   /*for layout for boxes */
+  flex-direction: column; /*like break for each box*/
+  width: 300px;
+  padding: 20px;
+ 
+}
+
+/*for Input fields */
+.form-input {
+  margin-bottom: 15px;   /*space between two boxes */
+  padding: 10px;     
+  font-size: 16px;
+  border: 1px solid #ccc;
+
+}
+
+/*for Submit button */
+.form-button {
+  padding: 10px;
+  background-color: #172c41;
+  color: white;
+  font-weight: bold;
+  cursor: pointer; /*When users see the pointer (hand icon), they instantly this is clickable */
+}
+
+
+
+
+
+/* css for table  */
+.Table{
+  display: flex;
+  justify-content: center;
+}
+.task-table {
+  
+  width: "100%";
+  border-collapse: collapse;/*merge all those separate borders into a single clean line where table cells touch.*/
+ /* border: 5px solid #151515;   dark border */
+  font-size: 16px; /* slightly larger text */
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #333; /* dark border for cells */
+  padding: 10px;
+  text-align: left;
+  background-color: #f9f9f9; /* optional light background */
+}
+
+.task-table th {
+  background-color: #e0e0e0;
+  border: 1px solid #161515 /* slightly different background for header */
+}
